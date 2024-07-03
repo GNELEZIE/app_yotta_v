@@ -1,0 +1,30 @@
+.logo{
+    width: 80px;
+}
+.navbar{
+    padding: 15px 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.aximo-hero-section3 {
+    padding-top: 0;
+}
+.nav-item{
+    padding: 0 5px;
+}
+.activelink{
+    background: #ff36001c;
+    color: #f14112 !important;
+    padding: 7px 15px;
+    border-radius: 6px;
+}
+.nav-item a:hover{
+    background: #ff36001c;
+    color: #f14112;
+   
+}
+.nav-item a{
+    color :#041727;
+    font-weight: 600;
+    padding: 7px 15px;
+    border-radius: 6px;
+}
