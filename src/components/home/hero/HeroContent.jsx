@@ -14,7 +14,7 @@ function HeroContent() {
 				Plus 3000  documents certifiés pour un avenir sécurisé.
 			</p>
 			<div className="aximo-hero-subscription">
-				<form action="/docs" method="get">
+				<form action="/check" method="get">
 					<input type="text" name="code" placeholder="Code du document" />
 					<button id="aximo-hero-subscription-btn" type="submit">
 						<span className="aximo-label-up">Vérifier</span>

@@ -5,15 +5,16 @@ import './App.css';
 import Home from './pages/Home'
 import Menu from './components/Menu'
 import { Route, Routes } from 'react-router-dom';
+import Ckeck from './pages/Check';
 
 function App() {
- 
+  const [code, setTCode] = useState([]);
   return (
     <>
   <Menu />
   <Routes>
     <Route path='/' element={<Home />} />
-    <Route path='/add' />
+    <Route path='/check' element={<Ckeck code={code}/>}/>
     <Route path='/list'/>
   </Routes>
     </>
