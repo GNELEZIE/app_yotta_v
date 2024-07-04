@@ -1,5 +1,6 @@
-// SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.24;
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity >=0.8.2 <0.9.0;
 contract Yotta{
    
     struct School{
@@ -17,14 +18,15 @@ contract Yotta{
     string name;
     uint256 age;
     string diplome;
+    
     uint256 schoolId;
 }
 // Mapping pour stocker les élèves en fonction de leur identifiant
   mapping(uint => School) public schools;
   mapping(uint => Student) public students;
     
-uint public schoolCount;
-uint public studentCount;
+    uint public schoolCount;
+    uint public studentCount;
 
     function registerSchool(string memory _name, string memory _adresse_physique
                        ,string memory _telephone, string memory _adresse_email, string memory _type_ecole
@@ -43,6 +45,12 @@ uint public studentCount;
 function getSchool(uint256 _schoolId) public view returns (string memory,string memory,string memory, string memory,address, uint256) {
         School memory school = schools[_schoolId];
         return (school.nom_ecole,school.adresse_physique,school.telephone,school.adresse_email, school.owner,school.numero_d_enregistrement);
+    }
+
+     // Rechercher un document par le code
+    function get_docs(string memory _code) public view returns (string memory) {
+         
+         
     }
 
 
