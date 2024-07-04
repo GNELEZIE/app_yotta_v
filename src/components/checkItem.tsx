@@ -1,7 +1,18 @@
 import diplome from "../assets/diplome.png";
-
+import { useState, useEffect } from "react";
 function checkItem(props){
     const {code} = props;
+    useEffect(() => {
+		if (window.ethereum && window.ethereum.selectedAddress) {
+		  // MetaMask is connected
+		 
+		} else {
+		  // MetaMask is not connected
+		 
+		  console.log("MetaMask n'est pas connecté");
+		}
+	  }, []);
+	  
     return(
         <div className="aximo-all-section bg-light3 pt-5">
           <div className="container">
